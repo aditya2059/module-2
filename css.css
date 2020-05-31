@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+/*** media query desktops***/
+@media (min-width: 992px) {
+	body{
+		background-color: yellow;
+	}
+	#c1, #c2, #c3 {
+     border: 1px solid black;
+     float: left;
+     width: calc(33.33% - 5px);
+     width: -moz-calc(33.33% - 5px);
+ 	 width: -webkit-calc(33.33% - 5px);
+ 	 margin-bottom: 8px;
+  	margin-right: 5px;
+     height: auto;
+     background: #ccc;
+     position: relative;
+     display: inline-block;
+	}
+	#chicken,#beef,#sushi{
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+    float: right;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+	}
+}
+
+
+/*** media query tablets/ipads***/
+@media (min-width: 768px) and (max-width: 991px) {
+	#c1, #c2 {
+     border: 1px solid black;
+     float: left;
+     width: calc(50% - 5px);
+     width: -moz-calc(50% - 5px);
+ 	 width: -webkit-calc(50% - 5px);
+ 	 margin-bottom: 8px;
+  	margin-right: 5px;
+     height: auto;
+     background: #ccc;
+     position: relative;
+     display: inline-block;
+	}
+	#c3 {
+     border: 1px solid black;
+     width: 100%;
+     height: auto;
+     background: #ccc;
+     position: relative;
+     display: inline-block;
+	}
+	#chicken,#beef,#sushi{
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+    float: right;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+	}
+	body{
+		background-color: green;
+	}
+}
+
+/*** media query mobiles***/
+@media (max-width: 767px) {
+	#c1, #c2, #c3 {
+	 border: 1px solid black;
+     width: 100%;
+     height: auto;
+     margin-bottom: 10px;
+     background: #ccc;
+     display: table;
+	}
+	#chicken,#beef,#sushi{
+	
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+    float: right;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+	}
+	body{
+		background-color: black;
+	}
+}
+div {
+  column-gap: 40px;
+}
+h1{
+	text-align: center;
+	font-family: "Comic Sans MS", Times, serif;
+	font-style: bold;
+}
+
+#pargraphText{
+	float:left; 
+   	clear: left;
+    margin: 30px;
+}
+#chicken{
+	background-color: #ca8587;
+	font-size: 30px;
+}
+#beef{
+	background-color: #A52A2A;
+	font-size: 30px;
+}
+#sushi{
+	background-color: #dec887;
+	font-size: 30px;
+}
+#container {
+  clear: both;
